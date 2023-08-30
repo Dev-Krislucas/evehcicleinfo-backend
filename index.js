@@ -2,10 +2,12 @@ const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const app = express();
+let cors = require('cors');
 require('dotenv').config({path:"./config.env"});
 //Essential Middle wares 
 app.use(express.json());
 app.use(morgan('dev'));
+app.use(cors());
 // app.use((req,res,next)=>{
 //     console.log(`${9+2}`);
 //     next();
