@@ -25,6 +25,9 @@ chargingTime:{
 },
 imgSrc:{
     type:String
+},
+company:{
+    type:String
 }
 });
 
