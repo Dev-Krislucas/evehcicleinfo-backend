@@ -19,9 +19,11 @@ mongoose.connect(process.env.DB,{useNewUrlParser:true}).then(()=>{console.log('C
 //Importing routes
 const vehicleRouter = require('./routes/vehicleRoutes');
 const userRouter = require('./routes/userRoutes');
+const blogRouter = require('./routes/blog-routes');
 
 app.use("/admin",vehicleRouter);
 app.use('/user',userRouter);
+app.use('/user/blogs',blogRouter);
 
 // app.listen()
 app.listen(process.env.PORT,()=>{
