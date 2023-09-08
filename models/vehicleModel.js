@@ -27,7 +27,8 @@ imgSrc:{
     type:String
 },
 company:{
-    type:String
+    type:String,
+    lowercase:true
 }
 });
 
